@@ -42,7 +42,6 @@
 		368D58A6239C375400E4F1EE = {
 			isa = PBXGroup;
 			children = (
-				368D58DA239C558500E4F1EE /* Models */,
 				368D58B1239C375400E4F1EE /* todo-list */,
 				368D58B0239C375400E4F1EE /* Products */,
 			);
@@ -62,6 +61,7 @@
 				368D58B2239C375400E4F1EE /* AppDelegate.swift */,
 				368D58B4239C375400E4F1EE /* SceneDelegate.swift */,
 				368D58CA239C4BE900E4F1EE /* Views */,
+				368D58DA239C558500E4F1EE /* Models */,
 				368D58C9239C4BD300E4F1EE /* Controllers */,
 				368D58CB239C4C1C00E4F1EE /* Support FIles */,
 				368D58C3239C375A00E4F1EE /* Info.plist */,
@@ -99,7 +99,8 @@
 			children = (
 				368D58DE239C55DA00E4F1EE /* item.swift */,
 			);
-			path = Models;
+			name = Models;
+			path = ../Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
