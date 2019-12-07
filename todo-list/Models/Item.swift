@@ -1,9 +1,9 @@
 //
-//  Item.swift
-//  Todoey
+//  item.swift
+//  todo-list
 //
-//  Created by Mihai Laurentiu Mocanu on 03/12/2019.
-//  Copyright © 2019 Mihai Laurentiu Mocanu. All rights reserved.
+//  Created by Ivan on 08.12.2019.
+//  Copyright © 2019 Ivan Vyalov. All rights reserved.
 //
 
 class Item {
