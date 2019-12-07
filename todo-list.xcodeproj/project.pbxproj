@@ -13,6 +13,7 @@
 		368D58D3239C53EE00E4F1EE /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D58D2239C53EE00E4F1EE /* TodoListViewController.swift */; };
 		368D58D7239C546100E4F1EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D58D6239C546100E4F1EE /* Main.storyboard */; };
 		368D58DF239C55DA00E4F1EE /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D58DE239C55DA00E4F1EE /* item.swift */; };
+		368D58E2239C693F00E4F1EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D58E1239C693E00E4F1EE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		368D58D2239C53EE00E4F1EE /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		368D58D6239C546100E4F1EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		368D58DE239C55DA00E4F1EE /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		368D58E1239C693E00E4F1EE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		368D58CB239C4C1C00E4F1EE /* Support FIles */ = {
 			isa = PBXGroup;
 			children = (
+				368D58E1239C693E00E4F1EE /* LaunchScreen.storyboard */,
 				368D58BB239C375A00E4F1EE /* Assets.xcassets */,
 			);
 			path = "Support FIles";
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368D58E2239C693F00E4F1EE /* LaunchScreen.storyboard in Resources */,
 				368D58D7239C546100E4F1EE /* Main.storyboard in Resources */,
 				368D58BC239C375A00E4F1EE /* Assets.xcassets in Resources */,
 			);
