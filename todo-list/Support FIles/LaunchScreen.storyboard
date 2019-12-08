@@ -21,7 +21,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30846762659999999" green="0.48951840400000002" blue="0.95965701339999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.30953589079999999" green="0.48411399129999999" blue="0.96330207590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RhI-Hj-crZ" secondAttribute="bottom" constant="15" id="I0q-oN-utx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RhI-Hj-crZ" secondAttribute="trailing" constant="20" id="LzI-Vr-WJ3"/>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="todo" width="800" height="600"/>
+        <image name="todo" width="400" height="300"/>
     </resources>
 </document>

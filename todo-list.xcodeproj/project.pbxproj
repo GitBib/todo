@@ -14,6 +14,7 @@
 		368D58D7239C546100E4F1EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D58D6239C546100E4F1EE /* Main.storyboard */; };
 		368D58E2239C693F00E4F1EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D58E1239C693E00E4F1EE /* LaunchScreen.storyboard */; };
 		368D58E4239C6DC300E4F1EE /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D58E3239C6DC300E4F1EE /* item.swift */; };
+		368D58E7239C702200E4F1EE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D58E6239C702200E4F1EE /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		368D58D6239C546100E4F1EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		368D58E1239C693E00E4F1EE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368D58E3239C6DC300E4F1EE /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item.swift; path = "todo-list/Models/item.swift"; sourceTree = SOURCE_ROOT; };
+		368D58E6239C702200E4F1EE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		368D58C9239C4BD300E4F1EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				368D58E5239C6F4800E4F1EE /* Custom */,
 				368D58D2239C53EE00E4F1EE /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -101,6 +104,14 @@
 			);
 			name = Models;
 			path = ../Models;
+			sourceTree = "<group>";
+		};
+		368D58E5239C6F4800E4F1EE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				368D58E6239C702200E4F1EE /* CustomTableViewCell.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				368D58E4239C6DC300E4F1EE /* item.swift in Sources */,
+				368D58E7239C702200E4F1EE /* CustomTableViewCell.swift in Sources */,
 				368D58D3239C53EE00E4F1EE /* TodoListViewController.swift in Sources */,
 				368D58B3239C375400E4F1EE /* AppDelegate.swift in Sources */,
 				368D58B5239C375400E4F1EE /* SceneDelegate.swift in Sources */,
