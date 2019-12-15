@@ -5,5 +5,5 @@ To Do List example using Core Data (framework realm) - Swift 5 - Xcode 11.1
 - [x] Performance
 - [x] Adding
 - [x] Core data
-- [x] Icloud sync
+- [x] iCloud sync
 - [ ] SiriKit
