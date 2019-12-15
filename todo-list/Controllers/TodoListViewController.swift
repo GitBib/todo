@@ -18,6 +18,11 @@ class TodoListViewController: UITableViewController {
         super.viewDidLoad()
         
         itemArray = realm.objects(Item.self)
+        
+        CloudManager.fetchDataFromCloud(items: itemArray) { (item) in
+            StorageManager.saveObject(item)
+            self.tableView.reloadData()
+        }
     }
     
     //MARK: - Tableview Datasource Methods
@@ -40,8 +45,11 @@ class TodoListViewController: UITableViewController {
         
         let actionDelete = UIContextualAction(style: .destructive, title: titleDelete,
           handler: { (action, view, completionHandler) in
-            StorageManager.deleteObject(item)
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.showAlert(title: "To delete a item?", message: "This item will be delete from all your devices") {
+                CloudManager.deleteRecord(record: item.recordID)
+                StorageManager.deleteObject(item)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
             completionHandler(true)
         })
         
@@ -50,6 +58,7 @@ class TodoListViewController: UITableViewController {
             try! realm.write {
                 self.itemArray[indexPath.row].done = !self.itemArray[indexPath.row].done
             }
+            CloudManager.updateDataCloud(item: item)
             tableView.reloadData()
             completionHandler(true)
         })
@@ -85,5 +94,17 @@ class TodoListViewController: UITableViewController {
             let newTodoVC = segue.destination as! NewTodoViewController
             newTodoVC.currentItem = item
         }
+    }
+    
+    private func showAlert(title: String, message: String, closure: @escaping () -> ()) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Delete", style: .destructive) { (_) in
+            closure()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
     }
 }

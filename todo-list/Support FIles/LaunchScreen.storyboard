@@ -17,11 +17,12 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todo" translatesAutoresizingMaskIntoConstraints="NO" id="RhI-Hj-crZ">
                                 <rect key="frame" x="20" y="44" width="374" height="803"/>
-                                <color key="backgroundColor" red="0.30953589079999999" green="0.48411399129999999" blue="0.96330207590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.91239088769999999" green="0.90066963430000002" blue="0.87356621030000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30953589079999999" green="0.48411399129999999" blue="0.96330207590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.78381991390000005" green="0.83348411320000004" blue="0.89104682209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RhI-Hj-crZ" secondAttribute="bottom" constant="15" id="I0q-oN-utx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RhI-Hj-crZ" secondAttribute="trailing" constant="20" id="LzI-Vr-WJ3"/>
@@ -37,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="todo" width="400" height="300"/>
+        <image name="todo" width="800" height="600"/>
     </resources>
 </document>

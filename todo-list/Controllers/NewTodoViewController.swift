@@ -37,8 +37,16 @@ class NewTodoViewController: UITableViewController {
             try! realm.write {
                 currentItem?.title = newTodo.title
                 currentItem?.done = newTodo.done
+                CloudManager.updateDataCloud(item: currentItem!)
             }
         } else {
+            CloudManager.saveDataToCloud(item: newTodo) { (recordID) in
+                DispatchQueue.main.async {
+                    try! realm.write {
+                        newTodo.recordID = recordID
+                    }
+                }
+            }
             StorageManager.saveObject(newTodo)
         }
     }
